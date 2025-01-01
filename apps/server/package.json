@@ -1,0 +1,33 @@
+{
+  "name": "@repo/server",
+  "version": "1.0.50",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "bun run --watch src/index.ts"
+  },
+  "dependencies": {
+    "@elysiajs/cookie": "^0.8.0",
+    "@elysiajs/cors": "^1.1.1",
+    "@elysiajs/swagger": "^1.1.6",
+    "@elysiajs/trpc": "^1.1.0",
+    "@elysiajs/websocket": "^0.2.8",
+    "@prisma/client": "^6.1.0",
+    "@sinclair/typebox": "^0.34.12",
+    "@trpc/server": "^10.45.2",
+    "bcrypt": "^5.1.1",
+    "elysia": "latest",
+    "passport": "^0.7.0",
+    "passport-github2": "^0.1.12",
+    "passport-google-oauth20": "^2.0.0"
+  },
+  "devDependencies": {
+    "@repo/configs": "*",
+    "@types/bcrypt": "^5.0.2",
+    "@types/passport": "^1.0.17",
+    "@types/passport-google-oauth20": "^2.0.16",
+    "bun-types": "latest",
+    "prisma": "^6.1.0",
+    "zod": "^3.24.1"
+  },
+  "module": "src/index.js"
+}

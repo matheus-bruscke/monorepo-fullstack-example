@@ -1,0 +1,12 @@
+services:
+  postgres:
+    image: postgres:16.3-alpine
+    environment:
+      - POSTGRES_DB=serverdb
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
+    volumes:
+      - ./data/postgres:/var/lib/postgresql/data
+    ports:
+      - '5432:5432'
+    container_name: fullstack_server
