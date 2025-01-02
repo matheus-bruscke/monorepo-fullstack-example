@@ -2,8 +2,11 @@
   "name": "@repo/server",
   "version": "1.0.50",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "bun run --watch src/index.ts"
+    "dev": "bun run --watch src/index.ts",
+    "start": "bun run src/index.ts",
+    "migrate": "bun run prisma migrate dev",
+    "generate": "bun run prisma generate",
+    "build": "bun install && bun run prisma generate && bun run prisma migrate dev"
   },
   "dependencies": {
     "@elysiajs/cookie": "^0.8.0",
