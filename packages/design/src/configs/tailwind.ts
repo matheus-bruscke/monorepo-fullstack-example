@@ -1,5 +1,5 @@
 import type { Config } from 'tailwindcss'
-import { brand, neutral } from '../foundations/colors'
+import { brand, layout, neutral } from '../foundations/colors'
 
 export const config = {
 	theme: {
@@ -7,7 +7,7 @@ export const config = {
 			colors: {
 				'ds-brand': brand,
 				'ds-neutral': neutral,
-				'ds-layout': neutral,
+				'ds-layout': layout,
 			},
 		},
 	},

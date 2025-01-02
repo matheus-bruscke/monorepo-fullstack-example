@@ -4,25 +4,28 @@
 	"type": "module",
 	"private": true,
 	"exports": {
-		"./button": "./src/button.tsx",
-		"./card": "./src/card.tsx",
-		"./code": "./src/code.tsx"
+		"./react": "./src/react/index.ts"
 	},
 	"scripts": {
-		"lint": "eslint . --max-warnings 0",
-		"generate:component": "turbo gen react-component",
 		"check-types": "tsc --noEmit"
 	},
 	"devDependencies": {
 		"@repo/configs": "*",
-		"@turbo/gen": "^1.12.4",
+		"@repo/design": "*",
 		"@types/node": "^20.11.24",
 		"@types/react": "18.3.0",
 		"@types/react-dom": "18.3.1",
+		"autoprefixer": "^10.4.20",
+		"postcss": "^8.4.49",
+		"tailwindcss": "^3.4.17",
 		"typescript": "5.5.4"
 	},
 	"dependencies": {
+		"@radix-ui/react-slot": "^1.1.1",
+		"class-variance-authority": "^0.7.1",
+		"clsx": "^2.1.1",
 		"react": "^19.0.0",
-		"react-dom": "^19.0.0"
+		"react-dom": "^19.0.0",
+		"tailwind-merge": "^2.6.0"
 	}
 }

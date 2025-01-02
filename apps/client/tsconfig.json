@@ -4,8 +4,11 @@
     "preserveSymlinks": true,
     "paths": {
       "@/*": [
-        "./src/*"
-      ]
+        "./src/*",
+      ],
+      "@ui/*": [
+        "../../packages/ui/src/*"
+      ],
     },
     "esModuleInterop": true
   },

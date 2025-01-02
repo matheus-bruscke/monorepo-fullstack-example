@@ -2,7 +2,7 @@ import { config as dsConfig } from '@repo/design'
 import type { Config } from 'tailwindcss'
 
 export default {
-	content: ['./src/**/*.{js,ts,jsx,tsx,mdx}', '../../packages/ui/src/**/*.{js,ts,jsx,tsx,mdx}'],
+	content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
 	theme: {},
 	presets: [dsConfig],
 	plugins: [],
